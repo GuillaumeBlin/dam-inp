@@ -1,14 +1,12 @@
-{  
-  "name": "Android studio VNC Desktop",
-  "image": "registry.u-bordeaux.fr/gblin/gblin-pam",
-  "postCreateCommand": "",
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
-  },
-  "forwardPorts": [6080],
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+	"forwardPorts": [5901],
   "portsAttributes": {
-    "6080": {
-      "label": "desktop"
-    }
-  }
+		"5901": { 
+      "label": "VNC desktop"
+		}
+	}
 }
